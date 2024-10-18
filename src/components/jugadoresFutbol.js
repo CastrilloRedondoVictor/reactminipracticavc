@@ -11,7 +11,6 @@ export default class JugadoresFutbol extends Component {
         jugadores: [],
     }
 
-
     componentDidMount = () => {
         axios.get('https://apiejemplos.azurewebsites.net/api/Equipos').then((response) => {
             this.setState({
